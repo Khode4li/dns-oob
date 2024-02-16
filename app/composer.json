@@ -1,0 +1,13 @@
+{
+    "require": {
+        "predis/predis": "^2.2",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cache\\": "cache/",
+            "Config\\": "config/",
+            "Modules\\": "modules/"
+        }
+    }
+}
