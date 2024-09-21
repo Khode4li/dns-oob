@@ -22,7 +22,7 @@ fi
 
 read -p "enter the subdomain name that you want to use for DNS OOB(for example: `oob`.domain.com): " subd
 sed -i "s/sub-d/$subd/g" Dockerfile
-read -p "enter your domain name: " myd
+read -p "enter your domain name (oob.`domain.com`): " myd
 mydes=$(echo $myd | sed 's/\./\\\./g')
 sed -i "s/my-d-es/$mydes/g" Dockerfile
 sed -i "s/my-dd/$myd/g" Dockerfile
